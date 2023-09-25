@@ -77,8 +77,8 @@ public class TodoList {
     }
 
     public static void actualizarTarea(int i, String descripcion){
-        String[] tarea = listaDeTareas.get(i);
-        tarea[0] = descripcion;
+        String[] tareaEncontrada = listaDeTareas.get(i); //Cree un arreglo para guardar la tarea que voy a obtener por get(i)
+        tareaEncontrada[0] = descripcion;
     }
 
     public static String verDetalleTarea(int i){
